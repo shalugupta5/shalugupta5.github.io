@@ -69,6 +69,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  
 }
 
 /*===== CLASS CSS ===== */
@@ -226,8 +227,10 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 0;
+  /* bottom: 0; */
   width: 260px;
+  background-color: red;
+  
 }
 
 .home__blob {
@@ -235,7 +238,9 @@ img {
 }
 
 .home-img {
-  width: 360px;
+  width: 600px;
+  
+
 }
 
 /*BUTTONS*/
