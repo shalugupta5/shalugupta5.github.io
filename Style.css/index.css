@@ -338,3 +338,7 @@ a:hover {
 .github-icon-contact {
     border: 1px solid;
 }
+
+#user-detail-intro{
+    font-size: large;
+}
