@@ -277,20 +277,20 @@ a:hover {
 }
 
 
-#github-streak-stats {
+.github-streak-stats {
     border: 1px solid yellow;
     margin: auto;
     width: 30%;
 }
 
-#github-top-langs {
+.github-top-langs {
     border: 1px solid yellow;
 
     margin: auto;
     width: 20%;
 }
 
-#github-stats-card {
+.github-stats-card {
     border: 1px solid yellow;
     margin: auto;
     width: 29%;
