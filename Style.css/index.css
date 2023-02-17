@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {}
+
 
 label.logo {
     color: black;
@@ -335,6 +335,6 @@ a:hover {
 
 }
 
-.github-icon-contact{
+.github-icon-contact {
     border: 1px solid;
 }
