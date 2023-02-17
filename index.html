@@ -25,7 +25,7 @@
             <li><a class="nav-link skills" href="#skills">Skills</a></li>
             <li><a class="nav-link projects" href="#projects">Projects</a></li>
             <li><a class="nav-link contact" href="#contact">Contact</a></li>
-            <li><a class="nav-link resume" id="resume-link-1" href="path/to/resume.pdf" target="_blank">Resume</a></li>
+            <li><a class="nav-link resume" id="resume-link-1" href="Images\Shalu_Gupta_Resume.pdf.pdf" target="_blank">Resume</a></li>
         </ul>
         <!-- <ul>
             <li><a  href="#">Home</a></li>
@@ -44,6 +44,7 @@
             <h1 id="user-detail-name">Hey, <br>
                 I'm Shalu Gupta</h1>
             <p id="user-detail-intro">Java Backend Developer from India.</p>
+            <a href="http://127.0.0.1:5500/Images/Shalu_Gupta_Resume.pdf.pdf" class="btn" id="resume-button-2">Download Resume</a>
         </div>
 
         <div class="intro_gif">
@@ -70,7 +71,7 @@
                 software solutions. Committed to staying current with
                 emerging trends and technologies in the industry.
             </p>
-
+            <a href="Images\Shalu_Gupta_Resume.pdf.pdf" class="btn" id="resume-button-2">Download Resume</a>
         </div>
     </section>
 
@@ -139,6 +140,29 @@
             <a class="project-deployed-link" href="https://lively-kitsune-c2be93.netlify.app/">Deployed link</a>
 		
         </div>
+
+        <div class="project-card">
+			<img class="project-img" src="Images\fitness.png" alt="Project 1 image">
+			<h3 class="project-title">Project- Fitness Blender</h3>
+			<p class="project-description">A website that offers free and paid workout videos.</p>
+			<p class="project-tech-stack">Tech stack used: JavaScript | HTML | CSS | Local Storage |
+                Mock API
+                </p>
+			<a class="project-github-link" href="https://github.com/shalugupta5/warm-laborer-2226/tree/main/My_Fitness_Project">GitHub repository</a>
+			<a class="project-deployed-link" href="https://classy-paprenjak-9f4ef1.netlify.app/">Deployed link</a>
+		</div>
+
+
+        <div class="project-card">
+			<img class="project-img" src="Images\rentopic1.png" alt="Project 2 image">
+			<h3 class="project-title">Project - Rentomojo</h3>
+			<p class="project-description">An online rental solution for furnishing needs.</p>
+			<p class="project-tech-stack">Tech stack used: JavaScript | HTML | CSS | Local Storage |
+                Google Map API | JSON server</p>
+			<a class="project-github-link" href="https://github.com/hoshiyarjyani/deafening-weather-2115">GitHub repository</a>
+            <a class="project-deployed-link" href="https://lively-kitsune-c2be93.netlify.app/">Deployed link</a>
+		
+        </div>
     <div>
     </section>
 
@@ -151,7 +175,7 @@
       </div>
 
 	<div class="github-streak">
-		<img class="git-img" id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=shalugupta5&theme=dark" alt="GitHub Streak Stats">
+		<img class="git-img" id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=shalugupta5&theme=dark" alt="GitHub Streak Stats">
 	</div>
 
 	<div class="github-top">
@@ -178,7 +202,7 @@
             </form>
            
         </div>
-
+        <a href="Images\Shalu_Gupta_Resume.pdf.pdf" class="btn" id="resume-button-1">Download Resume</a>
 
     <div id="contact-social">
         <div class="github-icon-contact">
@@ -203,6 +227,19 @@
 
     </div>
       </section>
+
+
+      <script>
+        // Function to handle the click event on the resume buttons
+        function handleResumeButtonClick(event) {
+          event.preventDefault();
+          window.open('http://127.0.0.1:5500/Images/Shalu_Gupta_Resume.pdf.pdf', '_blank');
+        }
+  
+        // Add event listeners to the resume buttons
+        document.getElementById('resume-button-1').addEventListener('click', handleResumeButtonClick);
+        document.getElementById('resume-button-2').addEventListener('click', handleResumeButtonClick);
+      </script>
 
 </body>
 

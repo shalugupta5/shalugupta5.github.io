@@ -250,7 +250,8 @@ a:hover {
 
 .project-div {
     padding: 5%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
     border: 1px solid red;
     height: auto;
