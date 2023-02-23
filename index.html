@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 
     <link rel="stylesheet" href="Style.css/index.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -47,7 +55,7 @@
 
             <h1 id="user-detail-name">Hey, <br>
                 I'm Shalu Gupta</h1>
-            <p id="user-detail-intro">Java Backend Developer from India.</p>
+            <p id="user-detail-intro" style="font-size: larger;">Java Backend Developer from India.</p>
             <a href="Shalu_Gupta_Resume.pdf" class="btn" id="resume-button-2" download>Download Resume</a>
             <!-- <a href="Images/Shalu_Gupta_Resume.pdf" class="btn" id="resume-button-2" download>Download Resume</a> -->
         </div>
@@ -63,10 +71,13 @@
     <section id="about" class="about section">
         <h2>About</h2>
         <!-- About me content goes here -->
+        
         <div class="about-img">
             <img class="home-img" src="Images\IMG_20230129_202828.jpg" alt="">
         </div>
-        <div class="about_intro">
+       
+        <div class="about_intro"> 
+           
             <p>
                 Web Developer with a strong background in
                 developing scalable, efficient, and secure web
@@ -80,6 +91,7 @@
             <!-- <a href="http://127.0.0.1:5500/Images/Shalu_Gupta_Resume.pdf.pdf" target="_blank" id="resume-button-2" download>Download Resume</a> -->
             <!-- <a href="Shalu_Gupta_Resume.pdf" class="btn" id="resume-button-2" download>Download Resume</a> -->
         </div>
+    
     </section>
 
 
@@ -177,8 +189,9 @@
 
     <!-- GitHub statistics -->
 
-    <div class="react-activity-calendar">
+    <div class="react-activity-calendar calendar">
         <!-- GitHub activity calendar goes here -->
+      
       </div>
 
 	<div class="github-streak">
@@ -251,3 +264,9 @@
 </body>
 
 </html>
+
+<script>
+    GitHubCalendar(".calendar", "shalugupta5");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "shalugupta5", { responsive: true });
+</script>
