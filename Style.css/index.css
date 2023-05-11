@@ -1,4 +1,4 @@
-* {
+ * {
     padding: 0%;
     margin: 0%;
     text-decoration: none;
@@ -29,11 +29,7 @@ nav {
 #nav-menu {
     position: fixed;
     top: var(--header-height); 
-     /* right: -100%; */
-    /* width: 80%;
-    height: 100%; */
-     /* padding: 2rem; */
-   /* background-color: var(--second-color); */
+     
     transition: 1.5s;
   }
 
@@ -70,7 +66,7 @@ nav ul li a {
 
 a.active,
 a:hover {
-    /* background: #1b9bff; */
+   
     background-color: #2c3e50;
     color: white;
     transition: .5s;
@@ -148,7 +144,7 @@ a:hover {
 
 #home {
     display: flex;
-    /* border: 1px solid rgb(52, 48, 48); */
+   
     margin: auto;
    
     justify-content: space-evenly;
@@ -159,8 +155,27 @@ a:hover {
    
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .user-detail {
-    /* border: 1px solid rgb(159, 17, 17); */
+   
 
     background-color: #2c3e50;
     width: 50%;
@@ -181,8 +196,7 @@ a:hover {
 
 .btn{
     color: white;
-    /* background-color: #417dab; */
-    /* border: 2px solid white; */
+  
     border-radius: 5px;
     width: 10%;
 }
@@ -191,9 +205,7 @@ a:hover {
     color: #2c3e50;
    
 }
-/* #user-detail-intro{
-   font-weight: 300;
-} */
+
 
 @media(max-width:858px) {
     #home {
@@ -207,7 +219,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     height: auto;
-    /* border: 1px solid black; */
+   
     padding: 4%;
 }
 
@@ -215,7 +227,7 @@ a:hover {
 .about-img {
 
 
-    /* border: 1px solid red; */
+  
     width: 30%;
     height: 20%;
 }
@@ -246,9 +258,7 @@ a:hover {
 }
 
 #skills {
-    /* border: 1px solid red; */
-    /* background-color: #0c0d0e; */
-    /* color: white; */
+   
 }
 
 
@@ -258,19 +268,18 @@ a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     grid-template-rows: auto;
-    /* border: 1px solid rgb(220, 17, 17); */
-    /* width: 200%; */
+   
     height: 100%;
     padding: 5%;
     justify-content: space-evenly;
     align-items: center;
 background-color: #364757;
 color: white;
-    /* background-image: url("https://i.gifer.com/7Ig7.gif"); */
+    
 }
 
 .skills-card {
-    /* border: 1px solid black; */
+
     display: flex;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -309,7 +318,7 @@ color: white;
 
 #projects {
     margin-top: 3%;
-    /* border: 1px solid green; */
+   
     height: auto;
 }
 
@@ -318,12 +327,12 @@ color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    /* border: 1px solid red; */
+   
     height: auto;
 }
 
 .project-card {
-    /* border: 1px solid darkmagenta; */
+    
     padding: 5%;
 }
 
@@ -344,7 +353,7 @@ color: white;
 
 
 .github-streak {
-    /* border: 1px solid yellow; */
+   
     margin: auto;
     width: 30%;
 }
@@ -357,7 +366,7 @@ color: white;
 }
 
 .github-stats {
-    /* border: 1px solid yellow; */
+   
     margin: auto;
     width: 29%;
 }
@@ -367,7 +376,7 @@ color: white;
     width: 100%;
     margin: auto;
     margin-top: 50px;
-    /* border: 1px solid black; */
+   
 }
 
 
@@ -375,7 +384,7 @@ color: white;
     margin: auto;
     width: 30%;
     display: block;
-    /* border: 1px solid rgb(210, 14, 14); */
+    
    
 }
 
@@ -384,7 +393,7 @@ color: white;
     width: auto;
     display: block;
     padding: 1%;
-    /* border: 1px solid rgb(113, 104, 104); */
+    
 }
 
 .contact__input {
@@ -412,14 +421,14 @@ color: white;
 #contact-social {
     display: flex;
     margin-top: 15px;
-    /* border: 1px solid rgb(69, 7, 7); */
+   
     padding: 5%;
     justify-content: space-evenly;
 
 }
 
 .github-icon-contact {
-    /* border: 1px solid; */
+   
     width: 30%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 margin-top: 2%;
@@ -428,4 +437,6 @@ padding: 2%;
 
 #user-detail-intro {
     font-size: large;
-}
+} 
+
+
