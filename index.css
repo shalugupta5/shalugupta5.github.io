@@ -410,6 +410,10 @@
   color: var(--text-color-light);
 }
 
+.light-theme #user-detail-in {
+  color: var(--text-color-dark);
+}
+
  .dark-theme #user-detail-name {
    color: var(--text-color-light);
  }
