@@ -406,7 +406,9 @@
  /* #user-detail-intro:hover {
    transform: scale(1.1);
  } */
-
+ .dark-theme #user-detail-in {
+  color: var(--text-color-light);
+}
 
  .dark-theme #user-detail-name {
    color: var(--text-color-light);
