@@ -1230,7 +1230,6 @@
   left: 0;
   right: 0;
   bottom: 0;
- 
   background-color: #f7f3f6;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -1242,14 +1241,24 @@
   content: "";
   height: 30px;
   width: 30px;
-  left: 0px;
+  left: 4px; /* Position the sun image on the left side */
   bottom: 4px;
   top: 0;
   bottom: 0;
-  margin: auto 0;
+  margin: auto;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   box-shadow: 0 0px 15px #f8ecec3d;
+  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+  /* background: white url('https://i.ibb.co/FxzBYR9/night.png'); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider:before {
+  left: 4px; /* Reset the position for the moon image */
+  right: unset; /* Position the moon image on the right side */
+  /* background: white url('https://i.ibb.co/7JfqXxB/sunny.png'); */
   background: white url('https://i.ibb.co/FxzBYR9/night.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -1263,28 +1272,46 @@ input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(24px);
-  -ms-transform: translateX(24px);
-  transform: translateX(24px);
-  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
   height: 80%;
   margin-top: 8%;
- 
 }
 
 .slider.round:before {
   border-radius: 60%;
   height: 100%;
- 
 }
+
+/* Set the default image as sun on dark theme */
+input:not(:checked) + .slider:before {
+  left: unset; /* Position the sun image on the left side */
+  right: 4px;;
+  background: white url('https://i.ibb.co/FxzBYR9/night.png');
+  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Update the image on dark theme */
+input:checked + .slider {
+  background-color: #f7f3f6;
+}
+
+input:checked + .slider:before {
+  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
 
 
  .foot {
