@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Hy2c6lQ26YIM4AKKnqZbgi2RRbDahmVdVxh9P7IzI84TJ5zNzhEvUpvU8hBs65WR57HKDlnbzC7OLtHZuJ3ztw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 
     <!-- <link rel="stylesheet" href="Style.css/index.css"> -->
     <link rel="stylesheet" href="index.css">
@@ -34,16 +34,22 @@
                 alt=""></button> -->
 
 
+                   <!-- <div class="checkbox-wrapper-25">
+                    <input type="checkbox"  id="theme-toggle-btn">
+                  
+                  </div>  -->
 
 
 
-                
-                    
-
-
-                   <div class="checkbox-wrapper-25">
+                  <!-- <div class="container"> -->
+                  
+                    <label id="switch" class="switch">
                     <input type="checkbox" id="theme-toggle-btn">
-                  </div> 
+                    <span class="slider round"></span>
+                    </label>
+                    <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+                    <!-- </div> -->
+
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -58,8 +64,7 @@
                 <li class="nav-item"><a class="nav-link skills" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link projects" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link contact" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link resume" id="resume-button-1" href="Shalu_Gupta_Resume.pdf"
-                        download target="_blank">Resume</a></li>
+                <li class="nav-item"><a class="nav-link resume" id="resume-button-1" href="Shalu_Gupta_Resume.pdf" download target="_blank" class="btn" id="resume-button-2" onclick="setTimeout(function(){ window.open('//drive.google.com/file/d/1n_nbykIQQCQadbGsQH2jOo8kw2ktCzH6/view'); }, 100);">Resume</a></li>
 
             </ul>
         </div>
@@ -112,9 +117,19 @@
                 <p id="user-detail-name">👋Hey, <br>
                     I'm Shalu Gupta</p>
                 <p id="user-detail-in">Full Stack Java Developer from India.</p>
-                <!-- <a href="Shalu_Gupta_Resume.pdf" download target="_blank" class="btn" id="resume-button-2"
-                    download>Download Resume</a> -->
-                    <a href="Shalu_Gupta_Resume.pdf" download target="_blank" class="btn" id="resume-button-2" onclick="setTimeout(function(){ window.open('Shalu_Gupta_Resume.pdf'); }, 100);">Download Resume</a>
+                <!-- <a href="Shalu_Gupta_Resume.pdf" download target="_blank" class="btn" id="resume-button-2">Download Resume</a> -->
+                
+
+                    <a href="Shalu_Gupta_Resume.pdf" download target="_blank" class="btn" id="resume-button-2" onclick="setTimeout(function(){ window.open('//drive.google.com/file/d/1n_nbykIQQCQadbGsQH2jOo8kw2ktCzH6/view'); }, 100);">Download Resume</a>
+                    <!-- <a href="https://drive.google.com/file/d/1n_nbykIQQCQadbGsQH2jOo8kw2ktCzH6/view" target="_blank" class="btn" id="resume-button-2">Download/View Resume</a> -->
+
+
+              
+
+
+
+
+
 
 
             </div>
@@ -179,7 +194,7 @@
             index = (index + 1) % texts.length; // Cycle through the texts
         }
 
-        setInterval(changeText, 2000); // Change text every 1 second
+        setInterval(changeText, 1500); // Change text every 1 second
     </script>
 
 
@@ -752,7 +767,10 @@
 
 
     <!-- jkol -->
-
+    <div style="text-align: center;" class="foot">
+        <p> © 2023 Shalu Gupta</p>
+    </div>
+   
 </body>
 
 </html>
